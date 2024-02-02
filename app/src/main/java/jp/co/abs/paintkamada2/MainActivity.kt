@@ -8,13 +8,13 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import jp.co.abs.paintkamada2.ui.theme.DrawingScreen
-import jp.co.abs.paintkamada2.ui.theme.paintkamada2Theme
+import jp.co.abs.paintkamada2.ui.theme.Paintkamada2Theme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            paintkamada2Theme {
+            Paintkamada2Theme {
                 // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background

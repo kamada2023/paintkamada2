@@ -36,7 +36,7 @@ import jp.co.abs.paintkamada2.ui.theme.DrawingScreen
 import jp.co.abs.paintkamada2.ui.theme.SettingsTopAppBar
 import jp.co.abs.paintkamada2.ui.theme.ShapeType
 import jp.co.abs.paintkamada2.ui.theme.TypeSelectionBar
-import jp.co.abs.paintkamada2.ui.theme.paintkamada2Theme
+import jp.co.abs.paintkamada2.ui.theme.Paintkamada2Theme
 
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -58,7 +58,7 @@ class ExampleInstrumentedTest {
     @Test
     fun drawingScreenTest() {
         composeTestRule.setContent {
-            paintkamada2Theme { DrawingScreen() }
+            Paintkamada2Theme { DrawingScreen() }
         }
         composeTestRule.onRoot().printToLog("オーバルみる")
         composeTestRule.onNodeWithText("ペイントアプリVer.2").assertIsDisplayed()
